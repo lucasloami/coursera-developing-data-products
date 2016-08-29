@@ -43,18 +43,10 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>Introduction</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
-
-<p>Introduction</p>
-
-<p>This presentation is part of the Course Project for the Coursera Developing Data Products class. The peer assessed assignment has two parts. First, we need to create a Shiny application and deploy it on Rstudio&#39;s servers. Second, we should use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about the application. This presentation adresses the second part of the course project.</p>
+    <p>This presentation is part of the Course Project for the Coursera Developing Data Products class. The peer assessed assignment has two parts. First, we need to create a Shiny application and deploy it on Rstudio&#39;s servers. Second, we should use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about the application. This presentation adresses the second part of the course project.</p>
 
 <p>The app developed for the first part of the assignment is avalilable at: [shiny app](<a href="https://lucasloami.shinyapps.io/course_project/">https://lucasloami.shinyapps.io/course_project/</a></p>
 
@@ -66,10 +58,71 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Analyze Ozone emission in 1973</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>This project aims to analize the Ozone incidence distribution among the months and days of 1973. This project uses airquality dataset present in R by default.</p>
+
+<p>It contains two main &quot;pages&quot;. The first one shows the distribution of Ozone gas among the months. This page contains a dateInputRange filter that allow user to set different time frames to analyze the data. The second page still contains Ozone gas information, however we are in a deeper level right now. We are dealing with days in a month. By default, May is selected and all of its data is shown. There is also a dayRange component that allow us to select the interval of days in which we want to analyze Ozone data.</p>
+
+<p>All the filters impact automatically in the charts.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>For this project, we are using <code>airquality</code>, a dataset that contains daily air quality measurements in New York, May to September 1973. This dataset contains 154 observations on 6 variables.</p>
+
+<ul>
+<li>  Ozone   numeric Ozone (ppb)</li>
+<li>  Solar.R numeric Solar R (lang)</li>
+<li>  Wind    numeric Wind (mph)</li>
+<li>  Temp    numeric Temperature (degrees F)</li>
+<li>  Month   numeric Month (1--12)</li>
+<li>  Day numeric Day of month (1--31)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Get to know deeper the dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>We can look to some carachteristics of the data:</p>
+
+<pre><code class="r">head(airquality)
+</code></pre>
+
+<pre><code>##   Ozone Solar.R Wind Temp Month Day
+## 1    41     190  7.4   67     5   1
+## 2    36     118  8.0   72     5   2
+## 3    12     149 12.6   74     5   3
+## 4    18     313 11.5   62     5   4
+## 5    NA      NA 14.3   56     5   5
+## 6    28      NA 14.9   66     5   6
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Get to know deeper the dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The app developed for the first part of the assignment is avalilable at: [shiny app](<a href="https://lucasloami.shinyapps.io/course_project/">https://lucasloami.shinyapps.io/course_project/</a></p>
+
+<p>Source code for ui.R and server.R files are available on the <a href="https://github.com/lucasloami/coursera-developing-data-products">GitHub</a></p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -80,14 +133,32 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='Introduction'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='Analyze Ozone emission in 1973'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Dataset'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Get to know deeper the dataset'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Get to know deeper the dataset'>
+         5
       </a>
     </li>
   </ul>

@@ -21,7 +21,7 @@ Source code for ui.R and server.R files are available on the [GitHub](https://gi
 
 --- .class #id 
 
-## Slide 2
+## Analyze Ozone emission in 1973
 
 This project aims to analize the Ozone incidence distribution among the months and days of 1973. This project uses airquality dataset present in R by default.
 
@@ -31,6 +31,33 @@ All the filters impact automatically in the charts.
 
 --- .class #id
 
+## Dataset
+
+For this project, we are using `airquality`, a dataset that contains daily air quality measurements in New York, May to September 1973. This dataset contains 154 observations on 6 variables.
+
+*	Ozone	numeric	Ozone (ppb)
+*	Solar.R	numeric	Solar R (lang)
+*	Wind	numeric	Wind (mph)
+*	Temp	numeric	Temperature (degrees F)
+*	Month	numeric	Month (1--12)
+*	Day	numeric	Day of month (1--31)
 
 
+--- .class #id
+
+## Get to know deeper the dataset
+
+We can look to some carachteristics of the data:
+
+````{r}
+head(airquality)
+````
+
+--- .class #id
+
+## Get to know deeper the dataset
+
+The app developed for the first part of the assignment is avalilable at: [shiny app](https://lucasloami.shinyapps.io/course_project/
+
+Source code for ui.R and server.R files are available on the [GitHub](https://github.com/lucasloami/coursera-developing-data-products)
 
