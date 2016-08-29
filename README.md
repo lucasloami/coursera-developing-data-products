@@ -7,6 +7,16 @@ It contains two main "pages". The first one shows the distribution of Ozone gas 
 
 All the filters impact automatically in the charts. 
 
+## Dataset
+
+For this project, we are using `airquality`, a dataset that contains daily air quality measurements in New York, May to September 1973. This dataset contains 154 observations on 6 variables.
+
+*   Ozone   numeric Ozone (ppb)
+*   Solar.R numeric Solar R (lang)
+*   Wind    numeric Wind (mph)
+*   Temp    numeric Temperature (degrees F)
+*   Month   numeric Month (1--12)
+*   Day numeric Day of month (1--31)
 
 
 ## How to run the project
