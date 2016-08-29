@@ -16,3 +16,11 @@ git clone [THIS_REPOSITORY_URL]
 ````
 
 Then, open the project folder inside RStudio. Specially, open the files `server.r` and/or `ui.R`. Click in RStudio button `runApp`.
+
+## Slides
+You can find them in `/project/index.html`. You can run them using Knitr as well. Clone the project, `cd` into the project folder and type the following in your R console:
+
+````{r}
+library(knitr)
+browseUrl("index.html")
+````
